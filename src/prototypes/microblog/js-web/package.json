@@ -1,0 +1,20 @@
+{
+  "name": "microblog",
+  "version": "1.0.0",
+  "description": "A Microblog!",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node serve/"
+  },
+  "author": "Geoff Huston",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "koa": "^2.1.0",
+    "koa-static": "^3.0.0"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.23.0",
+    "babel-preset-env": "^1.2.1"
+  }
+}
