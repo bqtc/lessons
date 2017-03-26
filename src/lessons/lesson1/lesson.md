@@ -64,7 +64,17 @@
 # Modifying Behavior
 ## Existing Site
 ### Picking
+* Refresh the page to clear any changes
+* Ask the student to choose an element which will be moved in code, and another which will act as the "button"
+* In the Element Inspector, edit both tags to add id attributes if none are already assigned, possibly of the form `"bqtc"{elem,button}`, hereafter <elem> and <button>
 ### Editing
+* In the Console of the Inspector, execute `var button = document.getElementById("<button>"), elem = document.getElementById("<elem>")` which will acquire both elements in the current context. Explain that this is the most rudimentary way of tying structure (HTML) to behavior (Javascript)
+* Next, execute `function bqtcPosition(event) { elem.currentStyle.top = "100px"; }` which defines the action to take on the element, changing the value as necessary to suit the selected element
 ### Committing
+* Next, execute `button.addEventListener("click", bqtcPosition)` which registers the handler
+* In the live view, ask the student to try clicking the element chosen to be the button, and observe the change to the other element
 ### More Exercise
+* Remove the handler with `button.removeEventListener("click", bqtcPosition)`
+* Experiment with other handlers, for example randomization of a single value (hint: Math.floor(Math.random() * upper) + lower), or even background color changes
 # Introduction to Shell
+## 
